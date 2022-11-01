@@ -1,0 +1,8 @@
+@import './global-variables.scss';
+.main-body-wrapper {
+  top: $main-header-height;
+  background-color: $background-color-secondary;
+  position: absolute;
+  overflow-y: auto;
+  z-index: -1;
+}

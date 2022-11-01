@@ -1,0 +1,24 @@
+@import "../../styles/global-variables.scss";
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $main-header-height;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: $text-color-secondary;
+  font-weight: $font-weight-semibold;
+}
+
+a {
+  color: $text-color-primary;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.active-route {
+  color: $text-color-secondary;
+}

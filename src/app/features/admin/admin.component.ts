@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-admin',
+  selector: 'tap-admin',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './admin.component.html',
