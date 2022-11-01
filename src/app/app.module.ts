@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
+import { APP_ROUTES } from './routes';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,9 +9,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    RouterModule.forRoot(APP_ROUTES),
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

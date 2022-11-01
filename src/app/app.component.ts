@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PreloadAllModules, provideRouter, RouterModule, withPreloading } from '@angular/router';
+import { APP_ROUTES } from './routes';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'TAP';
+
 }
