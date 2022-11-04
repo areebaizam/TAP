@@ -1,4 +1,19 @@
+// Layout size
+$page-wrapper-height:100vh;
+$page-wrapper-width:100%;
+$page-wrapper-padding-x: 1.5rem;
+$page-wrapper-padding-y: 1.5rem;
+$content-wrapper-padding-x: 3.5rem;
+
 $main-header-height:60px;
+$main-footer-height:20px;
+$content-footer-height:0px;
+$total-footer-height: calc(#{$main-footer-height} + #{$content-footer-height});
+
+
+//CAUTION: Keep space between '-' minus in calc function
+$main-wrapper-height: calc(#{$page-wrapper-height} - #{$main-header-height} - #{$total-footer-height});
+
 
 
 // Font Size
@@ -21,5 +36,5 @@ $font-weight-bold: 700;
 //Colors
 $text-color-primary: #eff1fa;
 $text-color-secondary: #cbcddeae;
-$background-color-primary:#eff1fa;
+$background-color-primary:#1976d2;
 $background-color-secondary:#cbcddeae;

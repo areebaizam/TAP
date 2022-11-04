@@ -1,8 +1,47 @@
 @import './global-variables.scss';
+
 .main-body-wrapper {
-  top: $main-header-height;
-  background-color: $background-color-secondary;
   position: absolute;
-  overflow-y: auto;
-  z-index: -1;
+  top: $main-header-height;
+  width: $page-wrapper-width;
+  .router-outlet-container {
+    position: relative;
+    padding: $page-wrapper-padding-y $content-wrapper-padding-x;
+    min-height: $main-wrapper-height;
+    background-color: $background-color-secondary;
+    z-index: -1;
+  }
+}
+
+.header,
+.footer {
+  width: $page-wrapper-width;
+  padding: 0 $page-wrapper-padding-x;
+  display: flex;
+  align-items: center;
+  background-color: $background-color-primary;
+  color: $text-color-primary;
+  font-weight: $font-weight-normal;
+  justify-content: center;
+}
+
+.header {
+  // position: fixed;
+  height: $main-header-height;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+
+
+  a {
+    color: $text-color-secondary;
+    margin-left: 10px;
+  }
+
+  .active-route {
+    color: $text-color-primary;
+  }
+}
+
+.footer {
+  height: $main-footer-height;
+  box-shadow: 0 -4px 17px -2px rgba(0, 0, 0, 0.35);
 }

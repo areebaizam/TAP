@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 //Shared Components
-import { HeaderComponent } from './shared/components';
+import { HeaderComponent, FooterComponent } from './shared/components';
 
-const SHARED_COMPONENTS = [HeaderComponent];
+const SHARED_COMPONENTS = [HeaderComponent, FooterComponent];
 
 @NgModule({
   declarations: [AppComponent],
