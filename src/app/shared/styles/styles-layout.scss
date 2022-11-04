@@ -4,12 +4,11 @@
   position: absolute;
   top: $main-header-height;
   width: $page-wrapper-width;
+  background-color: $background-color-secondary;
+
   .router-outlet-container {
-    position: relative;
     padding: $page-wrapper-padding-y $content-wrapper-padding-x;
     min-height: $main-wrapper-height;
-    background-color: $background-color-secondary;
-    z-index: -1;
   }
 }
 
@@ -28,7 +27,7 @@
 .header {
   // position: fixed;
   height: $main-header-height;
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.55);
 
 
   a {
@@ -36,8 +35,13 @@
     margin-left: 10px;
   }
 
-  .active-route {
+  .active-route,
+  a:hover {
+    transform: translateY(-3px);
+    transition: all 0.4s ease-in-out;
     color: $text-color-primary;
+    border-bottom: 4px solid;
+    border-color: $background-color-accent;
   }
 }
 

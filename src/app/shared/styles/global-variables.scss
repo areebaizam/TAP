@@ -6,7 +6,7 @@ $page-wrapper-padding-y: 1.5rem;
 $content-wrapper-padding-x: 3.5rem;
 
 $main-header-height:60px;
-$main-footer-height:20px;
+$main-footer-height:30px;
 $content-footer-height:0px;
 $total-footer-height: calc(#{$main-footer-height} + #{$content-footer-height});
 
@@ -37,4 +37,5 @@ $font-weight-bold: 700;
 $text-color-primary: #eff1fa;
 $text-color-secondary: #cbcddeae;
 $background-color-primary:#1976d2;
-$background-color-secondary:#cbcddeae;
+$background-color-accent:#34e3ec;
+$background-color-secondary:#cbcdde3e;
